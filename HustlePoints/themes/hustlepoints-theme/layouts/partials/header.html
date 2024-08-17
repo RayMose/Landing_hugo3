@@ -1,0 +1,22 @@
+<header>
+    <div class="container">
+        <div class="header-content">
+            <div class="logo">
+                <img src="/img/logo2.png" alt="Hustle Points">
+                <span>Hustle Points</span>
+            </div>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="{{ .Site.Home.RelPermalink }}">Home</a></li>
+                    <li><a href="{{ .Site.BaseURL }}about/">About</a></li>
+                    <li><a href="{{ .Site.BaseURL }}contact/">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>

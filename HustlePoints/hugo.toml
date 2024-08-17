@@ -1,0 +1,4 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "Hustle Points"
+theme = "hustlepoints-theme"
