@@ -13,6 +13,7 @@
       <link rel="stylesheet" href="/css/style.min.d901d9a0c5a427e22d940b34f753200a53c97279b0f043ed9e74c66a98427e73.css">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    
 </head>
 <body>
     <header>
@@ -88,8 +89,20 @@ Occaecat nulla excepteur dolore excepteur duis eiusmod ullamco officia anim in v
     </div>
 </footer>
 
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
     
     
       

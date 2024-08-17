@@ -1,0 +1,70 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "sthemes/hustlepoints-theme/assets/img"
+public_folder: "/assets/img"
+
+collections:
+  - name: "homepage"
+    label: "Homepage"
+    files:
+      - name: "features_section"
+        label: "Features Section"
+        file: "themes/hustlepoints-theme/layouts/shortcodes/features-section.html"
+        fields:
+          - { label: "Section Title", name: "title", widget: "string" }
+          - { label: "Feature Items", name: "features", widget: "list", fields: [
+              { label: "Title", name: "title", widget: "string" },
+              { label: "Description", name: "description", widget: "text" },
+              { label: "Icon", name: "icon", widget: "string" },
+              { label: "Image", name: "image", widget: "image" }
+            ]}
+
+      - name: "process_section"
+        label: "Process Section"
+        file: "themes/hustlepoints-theme/layouts/shortcodes/process-section.html"
+        fields:
+          - { label: "Section Title", name: "title", widget: "string" }
+          - { label: "Process Steps", name: "steps", widget: "list", fields: [
+              { label: "Step Title", name: "step_title", widget: "string" },
+              { label: "Step Description", name: "step_description", widget: "text" },
+              { label: "Icon", name: "icon", widget: "string" }
+            ]}
+
+  - name: "about"
+    label: "About Page"
+    files:
+      - name: "about_services"
+        label: "About Services"
+        file: "themes/hustlepoints-theme/layouts/shortcodes/about-services.html"
+        fields:
+          - { label: "Section Title", name: "title", widget: "string" }
+          - { label: "Service Items", name: "services", widget: "list", fields: [
+              { label: "Title", name: "title", widget: "string" },
+              { label: "Description", name: "description", widget: "text" },
+              { label: "Icon", name: "icon", widget: "string" }
+            ]}
+
+  - name: "contact"
+    label: "Contact Page"
+    files:
+      - name: "contact_info"
+        label: "Contact Info"
+        file: "themes/hustlepoints-theme/layouts/shortcodes/contact-info.html"
+        fields:
+          - { label: "Location", name: "location", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Terms and Services", name: "terms", widget: "text" }
+          - { label: "Map Embed URL", name: "map_url", widget: "string" }
+
+      - name: "contact_form"
+        label: "Contact Form"
+        file: "themes/hustlepoints-theme/layouts/shortcodes/contact-form.html"
+        fields:
+          - { label: "Form Title", name: "form_title", widget: "string" }
+          - { label: "Name Placeholder", name: "name_placeholder", widget: "string" }
+          - { label: "Email Placeholder", name: "email_placeholder", widget: "string" }
+          - { label: "Subject Placeholder", name: "subject_placeholder", widget: "string" }
+          - { label: "Message Placeholder", name: "message_placeholder", widget: "string" }
+          - { label: "Submit Button Text", name: "submit_text", widget: "string" }
