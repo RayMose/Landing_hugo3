@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: "sthemes/hustlepoints-theme/assets/img"
+media_folder: "themes/hustlepoints-theme/assets/img"
 public_folder: "/assets/img"
 
 collections:
